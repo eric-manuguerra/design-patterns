@@ -1,7 +1,23 @@
 Design Patterns
 =====
 
-## State
+## Chain of responsibility (Chaîne de responsabilité)
+
+La chaîne de responsabilité permet de découpler l'émetteur et le destinataire d'une requête.
+
+La requête est passée à un jeu de destinataires liés en chaîné ayant chacun la possibilité d'effectuer un traitement.
+
+Les caractéristiques de ce design pattern sont :
+
+* L'émetteur et le destinataire sont "découplés"
+* 1 ou plusieurs intermédiaires interviennent (la résolution des destinataires est dynamique)
+* Les destinataires ne sont pas explicitement définis
+
+La spécification Servlet Filter repose sur ce motif de conception.
+
+La librairie [commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
+
+## State (Etat)
 
 Le motif de conception (ou design pattern) "State" est un pattern de comportement.
 
@@ -16,7 +32,7 @@ Ce pattern permet de modéliser par exemple le comportement de "machine à état
 
 [State pattern Wikipédia](http://en.wikipedia.org/wiki/State_pattern)
 
-## Strategy
+## Strategy (Stratégie)
 
 Tout comme le pattern "State", le pattern "Strategy" permet de changer dynamiquement le comportement d'un système.
  
