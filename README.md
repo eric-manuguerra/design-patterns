@@ -14,7 +14,7 @@ Ce pattern est relativement proche du "Strategy design pattern".
 
 Ce pattern permet de modéliser par exemple le comportement de "machine à états" (la classe com.sqli.patterns.strategy.Context).
 
-[Wikipédia](http://en.wikipedia.org/wiki/State_pattern)
+[State pattern Wikipédia](http://en.wikipedia.org/wiki/State_pattern)
 
 ## Strategy
 
@@ -24,6 +24,6 @@ Pour cela, les comportements sont encapsulés en une famille d'algorithmes qui p
 
 La classe d'implémentation est remplacée dynamiquement en fonction du contexte.
 
-![Alt text](/strategy-pattern/src/main/resources/strategy-pattern-uml.PNG?raw=true "Strategy pattern")
+![Alt text](/strategy-pattern/src/main/resources/strategy-pattern.PNG?raw=true "Strategy pattern")
 
-[Wikipédia](http://en.wikipedia.org/wiki/Strategy_pattern)
+[Strategy pattern Wikipédia](http://en.wikipedia.org/wiki/Strategy_pattern)
