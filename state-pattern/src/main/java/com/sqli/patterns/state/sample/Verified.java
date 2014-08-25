@@ -6,10 +6,11 @@ package com.sqli.patterns.state.sample;
 public class Verified  implements DocumentState {
 
     @Override
-    public void promote() {
+    public void promote(Document document) {
         // Actions specific to Verified state document promotion
         // ex : verified state validation, send email to reviewer ...
         System.out.println("Promoting Verified -> Approved");
+        document.setState(new Approved());
     }
 
 

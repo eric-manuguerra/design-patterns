@@ -16,6 +16,8 @@ public class Document {
     }
 
     public void promote() {
-        state.promote();
+        state.promote(this);
     }
+
+
 }

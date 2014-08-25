@@ -8,7 +8,7 @@ public interface DocumentState {
     /**
      * Changes state of document towards approval.
      */
-    void promote();
+    void promote(Document document);
 
     /**
      * Prints the document.
