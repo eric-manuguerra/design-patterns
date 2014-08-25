@@ -1,7 +1,5 @@
-state
+State pattern
 =====
-
-# State pattern
 
 ## Principe
 
