@@ -16,7 +16,7 @@ public class Context {
 
     public void doExecute(STRATEGY_KEY key) {
 
-        final Strategy strategy = getStrategies().get(key);
+        final Strategy strategy = strategies.get(key);
 
         if (strategy != null) {
             strategy.execute();
@@ -29,7 +29,5 @@ public class Context {
         return strategies;
     }
 
-    public void setStrategies(HashMap<STRATEGY_KEY, Strategy> strategies) {
-        this.strategies = strategies;
-    }
+
 }

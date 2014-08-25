@@ -9,7 +9,9 @@ public class StrategyTest {
 
     @Test
     public void testStrategy() {
+
         final Context context = new Context();
+
         context.getStrategies().put(Context.STRATEGY_KEY.A, new StrategyA());
         context.getStrategies().put(Context.STRATEGY_KEY.B, new StrategyB());
         context.getStrategies().put(Context.STRATEGY_KEY.C, new StrategyC());
