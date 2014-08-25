@@ -1,5 +1,7 @@
-State pattern
+Design Patterns
 =====
+
+# State pattern
 
 ## Principe
 
@@ -13,3 +15,7 @@ Ce pattern est relativement proche du "Strategy design pattern".
 ![Alt text](/src/main/resources/state-pattern-uml.PNG?raw=true "State pattern")
 
 Ce pattern permet de modéliser par exemple le comportement de "machine à états" (la classe Context).
+
+[Wikipédia](http://en.wikipedia.org/wiki/State_pattern)
+
+#
