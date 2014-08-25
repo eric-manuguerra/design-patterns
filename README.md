@@ -5,7 +5,7 @@ Design Patterns
 
 La chaîne de responsabilité permet de découpler l'émetteur et le destinataire d'une requête.
 
-La requête est passée à un jeu de destinataires liés en chaîné ayant chacun la possibilité d'effectuer un traitement.
+La requête est passée à un jeu de destinataires liés en chaîne ayant chacun la possibilité d'effectuer un traitement.
 
 Les caractéristiques de ce design pattern sont :
 
