@@ -15,7 +15,7 @@ Les caractéristiques de ce design pattern sont :
 
 La spécification Servlet Filter repose sur ce motif de conception.
 
-La librairie [commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
+La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
 
 ## State (Etat)
 
