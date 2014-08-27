@@ -43,5 +43,6 @@
     <modules>
         <module>state-pattern</module>
         <module>strategy-pattern</module>
+        <module>cor-pattern</module>
     </modules>
 </project>

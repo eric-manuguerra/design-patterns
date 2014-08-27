@@ -9,13 +9,15 @@ La requête est passée à un jeu de destinataires liés en chaîne ayant chacun
 
 Les caractéristiques de ce design pattern sont :
 
-* L'émetteur et le destinataire sont "découplés"
+* L'émetteur de la requête et les destinataires sont reliés de manière lâche ("loosely coupled")
 * 1 ou plusieurs intermédiaires interviennent (la résolution des destinataires est dynamique)
 * Les destinataires ne sont pas explicitement définis
 
 La spécification Servlet Filter repose sur ce motif de conception.
 
 La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
+
+![Alt text](/cor-pattern/src/main/resources/cor-pattern-uml.PNG?raw=true "Chain of responsibility pattern")
 
 ## State (Etat)
 
