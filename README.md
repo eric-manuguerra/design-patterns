@@ -17,7 +17,7 @@ La spécification Servlet Filter repose sur ce motif de conception.
 
 La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
 
-![Alt text](/cor-pattern/src/main/resources/cor-pattern-uml.PNG?raw=true "Chain of responsibility pattern")
+![Alt text](/cor-pattern/src/main/resources/cor-pattern.PNG?raw=true "Chain of responsibility pattern")
 
 ## State (Etat)
 
