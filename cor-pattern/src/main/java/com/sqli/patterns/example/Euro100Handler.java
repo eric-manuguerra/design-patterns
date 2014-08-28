@@ -1,4 +1,4 @@
-package com.sqli.patterns;
+package com.sqli.patterns.example;
 
 /**
  * Created by eric.manuguerra on 27.08.2014.

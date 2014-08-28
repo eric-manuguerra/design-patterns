@@ -1,5 +1,6 @@
 package com.sqli.patterns;
 
+import com.sqli.patterns.example.*;
 import org.junit.Test;
 
 /**
