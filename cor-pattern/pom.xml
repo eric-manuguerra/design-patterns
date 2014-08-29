@@ -8,7 +8,6 @@
         <artifactId>design-patterns</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.sqli.patterns</groupId>
     <artifactId>cor-pattern</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>cor-pattern</name>
