@@ -1,6 +1,20 @@
 Design Patterns
 =====
 
+## Command (Commande)
+
+Le principe de ce motif de conception est d'encapsuler l'invocation. 
+
+**La commande** encapsule l'invocation et référence le destinataire - **receiver** -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et et les paramètres.
+
+Elle est exécutée par **l'invocateur** (invoker).
+
+Le client référence, l'invocateur, une ou plusieurs commandes et décide laquelle invoquer. 
+
+Exemple : un téléspectateur (le client/the client), une télécommande (l'invocateur/the invoker), les boutons de la télécommende (les commandes/the command), la télévision (le destinataire/the receiver).
+
+![Alt text](/command-pattern/src/main/resources/command-pattern.PNG?raw=true "Command pattern")
+
 ## Chain of responsibility (Chaîne de responsabilité)
 
 La chaîne de responsabilité permet de découpler l'émetteur et le destinataire d'une requête.
@@ -30,7 +44,7 @@ Ce pattern est relativement proche du "Strategy design pattern".
 
 ![Alt text](/state-pattern/src/main/resources/state-pattern-uml.PNG?raw=true "State pattern")
 
-Ce pattern permet de modéliser par exemple le comportement de "machine à états" (la classe com.sqli.patterns.strategy.Context).
+Il permet de modéliser par exemple le comportement de la "machine à états" (la classe com.sqli.patterns.strategy.Context).
 
 [State pattern Wikipédia](http://en.wikipedia.org/wiki/State_pattern)
 
