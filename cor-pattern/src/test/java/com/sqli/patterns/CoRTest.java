@@ -1,6 +1,12 @@
 package com.sqli.patterns;
 
-import com.sqli.patterns.example.*;
+import com.sqli.patterns.example1.*;
+import com.sqli.patterns.example2.CurrencyContext;
+import org.apache.commons.chain.Catalog;
+import org.apache.commons.chain.Command;
+import org.apache.commons.chain.Context;
+import org.apache.commons.chain.config.ConfigParser;
+import org.apache.commons.chain.impl.CatalogFactoryBase;
 import org.junit.Test;
 
 /**
@@ -27,5 +33,27 @@ public class CoRTest {
         validationHandler.handleRequest(1503);
 
 
+    }
+
+
+    @Test
+    public void testCommonsChain() throws Exception {
+        // Same logic implemented with commons-chain
+
+        final String CONFIG_FILE = "/chain.xml";
+        ConfigParser parser = new ConfigParser();
+        Catalog catalog;
+
+        parser.parse(
+                this.getClass().getResource(CONFIG_FILE));
+
+        catalog = CatalogFactoryBase.getInstance().getCatalog();
+
+        Command command = catalog.getCommand("atm-chain");
+        CurrencyContext ctx = new CurrencyContext();
+        ctx.setAmount(1510);
+        command.execute(ctx);
+        ctx.setAmount(1503);
+        command.execute(ctx);
     }
 }

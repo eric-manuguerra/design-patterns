@@ -1,4 +1,4 @@
-package com.sqli.patterns.example;
+package com.sqli.patterns.example1;
 
 /**
  * Created by eric.manuguerra on 27.08.2014.
@@ -28,7 +28,7 @@ public abstract class AbstractATMHandler implements ATMRequestHandler {
         }
     }
 
-    abstract int getValue();
+    protected abstract int getValue();
 
     @Override
     public void setNextHandler(ATMRequestHandler handler) {

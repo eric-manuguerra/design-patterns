@@ -1,11 +1,11 @@
-package com.sqli.patterns.example;
+package com.sqli.patterns.example1;
 
 /**
  * Created by eric.manuguerra on 27.08.2014.
  */
 public class Euro10Handler extends AbstractATMHandler {
 
-    int getValue()
+    protected int getValue()
     {
         return 10;
     }

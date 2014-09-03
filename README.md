@@ -5,7 +5,7 @@ Design Patterns
 
 Le principe de ce motif de conception est d'encapsuler l'invocation. 
 
-**La commande** encapsule l'invocation et référence le destinataire - **receiver** -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et et les paramètres.
+**La commande** encapsule l'invocation et référence le destinataire - **receiver** -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et ses paramètres.
 
 Elle est exécutée par **l'invocateur** (invoker).
 
@@ -32,6 +32,9 @@ La spécification Servlet Filter repose sur ce motif de conception.
 La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
 
 ![Alt text](/cor-pattern/src/main/resources/cor-pattern.PNG?raw=true "Chain of responsibility pattern")
+
+**Utilisation :** Ce pattern s'utilise lorsque qu'un ou plusieurs traitements peuvent être envisagés comme une chaine, chaque maillon de la chaîne étant découplé des autres et optionnel.
+
 
 ## State (Etat)
 
