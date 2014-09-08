@@ -1,6 +1,12 @@
 Design Patterns
 =====
 
+# Gang of four
+
+Motifs de conception (design patterns) du "Gang of Four" (GoF -  Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides).
+
+Ils s'appliquent à la programmation orientée objet.
+
 ## Command (Commande)
 
 Le principe de ce motif de conception est d'encapsuler l'invocation. 
@@ -11,7 +17,7 @@ Elle est exécutée par **l'invocateur** (invoker).
 
 Le client référence, l'invocateur, une ou plusieurs commandes et décide laquelle invoquer. 
 
-Exemple : un téléspectateur (le client/the client), une télécommande (l'invocateur/the invoker), les boutons de la télécommende (les commandes/the command), la télévision (le destinataire/the receiver).
+Exemple : un téléspectateur (le client/the client), une télécommande (l'invocateur/the invoker), les boutons de la télécommande (les commandes/the command), la télévision (le destinataire/the receiver).
 
 ![Alt text](/command-pattern/src/main/resources/command-pattern.PNG?raw=true "Command pattern")
 
@@ -34,7 +40,6 @@ La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-cha
 ![Alt text](/cor-pattern/src/main/resources/cor-pattern.PNG?raw=true "Chain of responsibility pattern")
 
 **Utilisation :** Ce pattern s'utilise lorsque qu'un ou plusieurs traitements peuvent être envisagés comme une chaine, chaque maillon de la chaîne étant découplé des autres et optionnel.
-
 
 ## State (Etat)
 
@@ -62,3 +67,17 @@ La classe d'implémentation est remplacée dynamiquement en fonction du contexte
 ![Alt text](/strategy-pattern/src/main/resources/strategy-pattern.PNG?raw=true "Strategy pattern")
 
 [Strategy pattern Wikipédia](http://en.wikipedia.org/wiki/Strategy_pattern)
+
+## Visitor (visiteur)
+
+Ce motif de conception permet de séparer une opération des éléments d'une structure de données auxquels elle s'applique.
+
+Il permet de faire évoluer indépendamment les éléments de la structure de données et les traitements qui leur sont appliqués.
+
+Ce motif se révèle utile lorsqu'il n'est *pas souhaitable* ou *pas possible* de modifier la structure de données à parcourir.
+
+![Alt text](/visitor-pattern/src/main/resources/visitor-pattern.PNG?raw=true "Visitor pattern")
+
+[Visitor pattern Wikipédia](http://en.wikipedia.org/wiki/Visitor_pattern)
+
+ 
