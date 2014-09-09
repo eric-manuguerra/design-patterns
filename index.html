@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Design-patterns by eric-manuguerra</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Design-patterns</h1>
+        <p>Software, enterprise and integration design patterns</p>
+
+        <p class="view"><a href="https://github.com/eric-manuguerra/design-patterns">View the Project on GitHub <small>eric-manuguerra/design-patterns</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/eric-manuguerra/design-patterns/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/eric-manuguerra/design-patterns/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/eric-manuguerra/design-patterns">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="design-patterns" class="anchor" href="#design-patterns"><span class="octicon octicon-link"></span></a>Design Patterns</h1>
+
+<h1>
+<a name="gang-of-four" class="anchor" href="#gang-of-four"><span class="octicon octicon-link"></span></a>Gang of four</h1>
+
+<p>Motifs de conception (design patterns) du "Gang of Four" (GoF -  Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides).</p>
+
+<p>Ils s'appliquent à la programmation orientée objet.</p>
+
+<h2>
+<a name="command-commande" class="anchor" href="#command-commande"><span class="octicon octicon-link"></span></a>Command (Commande)</h2>
+
+<p>Le principe de ce motif de conception est d'encapsuler l'invocation. </p>
+
+<p><strong>La commande</strong> encapsule l'invocation et référence le destinataire - <strong>receiver</strong> -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et ses paramètres.</p>
+
+<p>Elle est exécutée par <strong>l'invocateur</strong> (invoker).</p>
+
+<p>Le client référence, l'invocateur, une ou plusieurs commandes et décide laquelle invoquer. </p>
+
+<p>Exemple : un téléspectateur (le client/the client), une télécommande (l'invocateur/the invoker), les boutons de la télécommande (les commandes/the command), la télévision (le destinataire/the receiver).</p>
+
+<p><img src="/command-pattern/src/main/resources/command-pattern.PNG?raw=true" alt="Alt text" title="Command pattern"></p>
+
+<h2>
+<a name="chain-of-responsibility-cha%C3%AEne-de-responsabilit%C3%A9" class="anchor" href="#chain-of-responsibility-cha%C3%AEne-de-responsabilit%C3%A9"><span class="octicon octicon-link"></span></a>Chain of responsibility (Chaîne de responsabilité)</h2>
+
+<p>La chaîne de responsabilité permet de découpler l'émetteur et le destinataire d'une requête.</p>
+
+<p>La requête est passée à un jeu de destinataires liés en chaîne ayant chacun la possibilité d'effectuer un traitement.</p>
+
+<p>Les caractéristiques de ce design pattern sont :</p>
+
+<ul>
+<li>L'émetteur de la requête et les destinataires sont reliés de manière lâche ("loosely coupled")</li>
+<li>1 ou plusieurs intermédiaires interviennent (la résolution des destinataires est dynamique)</li>
+<li>Les destinataires ne sont pas explicitement définis</li>
+</ul><p>La spécification Servlet Filter repose sur ce motif de conception.</p>
+
+<p>La librairie <a href="http://commons.apache.org/proper/commons-chain/">Apache commons-chain</a> fournit une implémentation avancée de ce design pattern. </p>
+
+<p><img src="/cor-pattern/src/main/resources/cor-pattern.PNG?raw=true" alt="Alt text" title="Chain of responsibility pattern"></p>
+
+<p><strong>Utilisation :</strong> Ce pattern s'utilise lorsque qu'un ou plusieurs traitements peuvent être envisagés comme une chaine, chaque maillon de la chaîne étant découplé des autres et optionnel.</p>
+
+<h2>
+<a name="state-etat" class="anchor" href="#state-etat"><span class="octicon octicon-link"></span></a>State (Etat)</h2>
+
+<p>Le motif de conception (ou design pattern) "State" est un pattern de comportement.</p>
+
+<p>Il offre un moyen de changer dynamiquement le comportement d'un système en fonction de son état ("State"), en évitant d'avoir recours
+à des blocs conditionnels ("if,  else if, else if ...).</p>
+
+<p>Ce pattern est relativement proche du "Strategy design pattern".</p>
+
+<p><img src="/state-pattern/src/main/resources/state-pattern-uml.PNG?raw=true" alt="Alt text" title="State pattern"></p>
+
+<p>Il permet de modéliser par exemple le comportement de la "machine à états" (la classe com.sqli.patterns.strategy.Context).</p>
+
+<p><a href="http://en.wikipedia.org/wiki/State_pattern">State pattern Wikipédia</a></p>
+
+<h2>
+<a name="strategy-strat%C3%A9gie" class="anchor" href="#strategy-strat%C3%A9gie"><span class="octicon octicon-link"></span></a>Strategy (Stratégie)</h2>
+
+<p>Tout comme le pattern "State", le pattern "Strategy" permet de changer dynamiquement le comportement d'un système.</p>
+
+<p>Pour cela, les comportements sont encapsulés en une famille d'algorithmes qui partagent la même interface. </p>
+
+<p>La classe d'implémentation est remplacée dynamiquement en fonction du contexte.</p>
+
+<p><img src="/strategy-pattern/src/main/resources/strategy-pattern.PNG?raw=true" alt="Alt text" title="Strategy pattern"></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Strategy_pattern">Strategy pattern Wikipédia</a></p>
+
+<h2>
+<a name="visitor-visiteur" class="anchor" href="#visitor-visiteur"><span class="octicon octicon-link"></span></a>Visitor (visiteur)</h2>
+
+<p>Ce motif de conception permet de séparer une opération des éléments d'une structure de données auxquels elle s'applique.</p>
+
+<p>Il permet de faire évoluer indépendamment les éléments de la structure de données et les traitements qui leur sont appliqués.</p>
+
+<p>Ce motif se révèle utile lorsqu'il n'est <em>pas souhaitable</em> ou <em>pas possible</em> de modifier la structure de données à parcourir.</p>
+
+<p><img src="/visitor-pattern/src/main/resources/visitor-pattern.PNG?raw=true" alt="Alt text" title="Visitor pattern"></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Visitor_pattern">Visitor pattern Wikipédia</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/eric-manuguerra">eric-manuguerra</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
