@@ -9,6 +9,4 @@ public interface Visitor {
     void visit(ItalicText italicText);
     void visit(Hyperlink hyperlink);
 
-
-
 }

@@ -7,11 +7,25 @@ Motifs de conception (design patterns) du "Gang of Four" (GoF -  Erich Gamma, Ri
 
 Ils s'appliquent à la programmation orientée objet.
 
+**Patterns de structure**
+
+## Decorator (Décorateur)
+
+Ce motif de conception permet d'étendre le comportement d'une classe en "l'enveloppant" d'une autre à l'exécution. 
+
+Le décorateur peut lui-même être "décoré" par un autre décorateur. 
+
+L'utilisateur peut ainsi choisir et combiner les décorateurs à volonté. C'est la caractéristique la plus intéressante du décorateur. 
+  
+Les classes InputStream et OutpuStream de l'API java IO sont conçues sur ce modèle : elles proposent un constructeur qui prend en paramètre une instance de la même classe abstraite.
+ 
+**Patterns de comportement**
+
 ## Command (Commande)
 
 Le principe de ce motif de conception est d'encapsuler l'invocation. 
 
-**La commande** encapsule l'invocation et référence le destinataire - **receiver** -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et ses paramètres.
+**La commande** encapsule l'invocation, référence le destinataire - **receiver** -, et les autres informations nécessaires à l'invocation : la méthode à exécuter et ses paramètres.
 
 Elle est exécutée par **l'invocateur** (invoker).
 
