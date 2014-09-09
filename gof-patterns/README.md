@@ -33,7 +33,7 @@ Le client référence, l'invocateur, une ou plusieurs commandes et décide laque
 
 Exemple : un téléspectateur (le client/the client), une télécommande (l'invocateur/the invoker), les boutons de la télécommande (les commandes/the command), la télévision (le destinataire/the receiver).
 
-![Alt text](/command-pattern/src/main/resources/command-pattern.PNG?raw=true "Command pattern")
+![Alt text](command-pattern/src/main/resources/command-pattern.PNG?raw=true "Command pattern")
 
 ## Chain of responsibility (Chaîne de responsabilité)
 
@@ -51,7 +51,7 @@ La spécification Servlet Filter repose sur ce motif de conception.
 
 La librairie [Apache commons-chain](http://commons.apache.org/proper/commons-chain/) fournit une implémentation avancée de ce design pattern. 
 
-![Alt text](/cor-pattern/src/main/resources/cor-pattern.PNG?raw=true "Chain of responsibility pattern")
+![Alt text](cor-pattern/src/main/resources/cor-pattern.PNG?raw=true "Chain of responsibility pattern")
 
 **Utilisation :** Ce pattern s'utilise lorsque qu'un ou plusieurs traitements peuvent être envisagés comme une chaine, chaque maillon de la chaîne étant découplé des autres et optionnel.
 
@@ -64,7 +64,7 @@ Il offre un moyen de changer dynamiquement le comportement d'un système en fonc
 
 Ce pattern est relativement proche du "Strategy design pattern".
 
-![Alt text](/state-pattern/src/main/resources/state-pattern-uml.PNG?raw=true "State pattern")
+![Alt text](state-pattern/src/main/resources/state-pattern-uml.PNG?raw=true "State pattern")
 
 Il permet de modéliser par exemple le comportement de la "machine à états" (la classe com.sqli.patterns.strategy.Context).
 
@@ -78,7 +78,7 @@ Pour cela, les comportements sont encapsulés en une famille d'algorithmes qui p
 
 La classe d'implémentation est remplacée dynamiquement en fonction du contexte.
 
-![Alt text](/strategy-pattern/src/main/resources/strategy-pattern.PNG?raw=true "Strategy pattern")
+![Alt text](strategy-pattern/src/main/resources/strategy-pattern.PNG?raw=true "Strategy pattern")
 
 [Strategy pattern Wikipédia](http://en.wikipedia.org/wiki/Strategy_pattern)
 
@@ -90,7 +90,7 @@ Il permet de faire évoluer indépendamment les éléments de la structure de do
 
 Ce motif se révèle utile lorsqu'il n'est *pas souhaitable* ou *pas possible* de modifier la structure de données à parcourir.
 
-![Alt text](/visitor-pattern/src/main/resources/visitor-pattern.PNG?raw=true "Visitor pattern")
+![Alt text](visitor-pattern/src/main/resources/visitor-pattern.PNG?raw=true "Visitor pattern")
 
 [Visitor pattern Wikipédia](http://en.wikipedia.org/wiki/Visitor_pattern)
 
