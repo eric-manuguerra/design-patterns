@@ -1,13 +1,11 @@
-Design Patterns
+Gang of four
 =====
-
-# Gang of four
 
 Motifs de conception (design patterns) du "Gang of Four" (GoF -  Erich Gamma, Richard Helm, Ralph Johnson et John Vlissides).
 
 Ils s'appliquent à la programmation orientée objet.
 
-**Patterns de structure**
+# Patterns de structure
 
 ## Decorator (Décorateur)
 
@@ -19,7 +17,7 @@ L'utilisateur peut ainsi choisir et combiner les décorateurs à volonté. C'est
   
 Les classes InputStream et OutpuStream de l'API java IO sont conçues sur ce modèle : elles proposent un constructeur qui prend en paramètre une instance de la même classe abstraite.
  
-**Patterns de comportement**
+# Patterns de comportement
 
 ## Command (Commande)
 
